@@ -1,0 +1,309 @@
+﻿{% extends 'songlab_base.html' %}
+{% load staticfiles %}
+
+{% block title %} SongLab {% endblock %}
+ {% block header-Content  %}{% endblock %}
+
+{% block content %}
+
+                <!--  Slider  -->
+                <div id="flexslider-nav" class="fullpage-wrap small">
+                    <ul class="slides">
+                        <li style="background-image:url({% static "assets/img/sliderT.jpg" %})">
+                            <div class="text center">
+                                <h1 class="heading center white margin-bottom-small flex-animation">轮播一 <br></h1>
+                                <p class="heading white center margin-bottom flex-animation">你想写东西么</p>
+
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                        <li style="background-image:url({% static "assets/img/sliderT2.jpg" %})">
+                            <div class="text center">
+                                <h1 class="heading center white margin-bottom-small flex-animation no-opacity">轮播二</h1>
+                                <p class="heading white center margin-bottom flex-animation no-opacity">宣传点</p>
+                                <!--<div class="padding-onlytop-md flex-animation no-opacity">-->
+                                    <!--<a href="" class="btn-alt small shadow margin-xs-bottom-small">Download Now</a>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                        <li style="background-image:url({% static "assets/img/slider.jpg" %})">
+                            <div class="text center">
+                                <h1 class="heading center white margin-bottom-small flex-animation no-opacity">轮播三</h1>
+                                <p class="heading white center margin-bottom flex-animation no-opacity">招生用的</p>
+                            </div>
+                            <div class="gradient dark"></div>
+                        </li>
+                    </ul>
+                    <div class="slider-navigation">
+                        <a href="#" class="flex-prev"><i class="material-icons">keyboard_arrow_left</i></a>
+                        <div class="slider-controls-container"></div>
+                        <a href="#" class="flex-next"><i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div id="godown">
+                        <a href="#home-wrap" class="btn-down">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                    </div>
+                </div>
+                <div style="margin-top: 70px"></div>
+                <!--  END Slider  -->
+                <div id="home-wrap" class="content-section fullpage-wrap">
+                    <!-- Abous us -->
+                    <div class="container">
+                        <!-- Section Image -->
+                        <div class="row no-margin padding-onlytop-lg">
+                            <div class="col-md-6 padding-leftright-null">
+                                <div data-responsive="parent-height" data-responsive-id="about" class="text">
+                                    <h2 class="margin-bottom-null left">研 究 方 向</h2>
+                                    <div class="padding-onlytop-sm">
+                                        <!--<p class="margin-bottom grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>-->
+                                        <ul class="styled">
+                                        <li>儿童视知觉和注意能力同儿童高级认知过程（语言、数学等能力）的关系。</li>
+                                        <li>儿童物体识别的神经机制：主要利用ERP、fNIRS等实验手段研究儿童视觉加工独特的神经机制。
+                                        </li>
+                                        <li>视知觉学习的神经机制：长时程地动态地探讨视知觉学习在大脑中的定位、时间进程、涉及的信息处理阶段。
+                                        </li>
+                                        </ul>
+{#                                        <a href="#" class="btn-pro">更多内容</a>#}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-leftright-null">
+                                <div data-responsive="child-height" data-responsive-id="about" class="section-image height-auto-sm">
+                                   <picture class="section right">
+                                       <img src={% static "assets/img/mind_map.PNG" %}  class="img-responsive" alt="">
+                                   </picture>
+                               </div>
+                            </div>
+                        </div>
+                        <!-- END Section Image -->
+                    </div>
+                    <!-- Services -->
+                    <div class="light-background">
+                        <div class="container padding-lg">
+                            <div class="row no-margin">
+                                <div class="col-md-12 padding-leftright-null text-center">
+                                    <h2 class="margin-bottom-small left">这块填什么？(你可以分块介绍一下你们专业的几大领域)</h2>
+                                </div>
+                                <div class="row no-margin">
+                                    <div class="col-md-6 padding-leftright-null">
+                                        <div class="text padding-md-bottom-null">
+                                            <i class="material-icons color service left">介绍一下1</i>
+                                            <div class="service-content large">
+                                                <h3 class="margin-bottom-extrasmall">历史角度</h3>
+                                                <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 padding-leftright-null">
+                                        <div class="text padding-md-bottom-null">
+                                            <i class="material-icons color service left">peoplo</i>
+                                            <div class="service-content large">
+                                                <h3 class="margin-bottom-extrasmall">展望未来</h3>
+                                                <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-margin">
+                                    <div class="col-md-6 padding-leftright-null">
+                                        <div class="text padding-md-bottom-null">
+                                            <i class="material-icons color service left">lightbulb_outline</i>
+                                            <div class="service-content large">
+                                                <h3 class="margin-bottom-extrasmall">当前现状</h3>
+                                                <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 padding-leftright-null">
+                                        <div class="text padding-md-bottom-null">
+                                            <i class="material-icons color service left">headset_mic</i>
+                                            <div class="service-content large">
+                                                <h3 class="margin-bottom-extrasmall">我们的亮点(招生需需要)</h3>
+                                                <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Services -->
+                        </div>
+                    </div>
+                    <!-- END Services -->
+                    <!-- Video Section -->
+                    <div class="container">
+                        <div class="row no-margin padding-lg">
+                            <div class="col-md-7 padding-leftright-null">
+                                <div data-responsive="child-height" data-responsive-id="video" class="text padding-md-top-null height-auto-md">
+                                    <!-- Video Popup -->
+                                    <a class="popup-vimeo" href="assets/img/videoSong.mp4">
+                                        <img src={% static "assets/img/pic_video_icon.PNG" %} alt="">
+                                    </a>
+                                    <!-- END Video Popup -->
+                                </div>
+                            </div>
+                            <div class="col-md-5 padding-leftright-null">
+                                <div data-responsive="parent-height" data-responsive-id="video" class="text padding-md-top-null padding-md-bottom-null">
+                                    <h3 class="margin-bottom-null left">关于多动症，家长千万别掉以轻心<br></h3>
+                                    <h3>&nbsp    &nbsp    &nbsp—&nbsp—宋艳</h3>
+                                    <div class="padding-onlytop-sm">
+                                        <p class="margin-bottom">注意缺陷多动障碍在我国称为多动症，是儿童期常见的一类心理障碍。
+                                            患有多动症的儿童高达5%到8%，多动症并不仅仅是好动，更多表现为注意力不集中、记忆力差等，
+                                            对儿童的学习和成长产生极大影响。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Video Section -->
+                    <!--  Section Image Background with overlay  -->
+                    <div class="row margin-leftright-null grey-background">
+                        <div class="bg-img overlay responsive" style="background-image:url({% static "assets/img/mind.PNG" %})">
+                            <div class="container padding-sm">
+                                <div class="row no-margin">
+                                    <div class="text">
+                                        <h3 class="big white margin-bottom-small">We provide the best services for any business</h3>
+                                        <a href="#" class="btn-pro white">Contact us now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  END Section Image Background with overlay  -->
+                    <!--  Section Testimonials  -->
+                    <div class="container">
+                        <div class="row no-margin padding-lg">
+                            <div class="col-md-12 padding-leftright-null text-center">
+                                <h3 class="big margin-bottom-small">这个领域国际专家</h3>
+                            </div>
+                            <!-- Testimonials -->
+                            <section class="testimonials-carousel-simple col-md-12 padding-leftright-null padding-bottom-null">
+                                <div class="item padding-leftright-null">
+                                    <div class="text padding-bottom-null">
+                                        <div class="person">
+                                            <img src={% static "assets/img/quote-girl.jpg" %} alt="">
+                                            <div class="description">
+                                                <em>作者</em>
+                                                <span class="margin-null"> 重大成果</span>
+                                            </div>
+                                        </div>
+                                        <blockquote class="margin-bottom-small">写一内容梗概，你倒是把文章的简介和链接给我，我负责呢给你实时更新网站</blockquote>
+                                    </div>
+                                </div>
+                                <div class="item padding-leftright-null">
+                                    <div class="text padding-bottom-null">
+                                        <div class="person">
+                                            <img src={% static "assets/img/quote-man.jpg" %} alt="">
+                                            <div class="description">
+                                                <em>同上作用</em>
+                                                <span class="margin-null">CMO at Company.com</span>
+                                            </div>
+                                        </div>
+                                        <blockquote class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptatum fugiat molestias, veritatis perspiciatis laborum modi beatae placeat explicabo at laudantium aliquam, nam vero ut!</blockquote>
+                                    </div>
+                                </div>
+                                <div class="item padding-leftright-null">
+                                    <div class="text padding-bottom-null">
+                                        <div class="person">
+                                            <img src="assets/img/quote-girl-two.jpg" alt="">
+                                            <div class="description">
+                                                <em>同上作用</em>
+                                                <span class="margin-null">Designer at Pink.com</span>
+                                            </div>
+                                        </div>
+                                        <blockquote class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur voluptatum fugiat molestias, veritatis perspiciatis laborum modi beatae placeat explicabo at laudantium aliquam, nam vero ut!</blockquote>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- END Testimonials -->
+                        </div>
+                    </div>
+                    <!-- END Section Testimonials  -->
+                    <!-- Section News -->
+                    <div class="light-background">
+                        <div class="container">
+                            <div class="row no-margin padding-onlytop-lg">
+                                <div class="col-md-12 padding-leftright-null text-center">
+                                    <h3 class="big margin-bottom-small">屌屌的文章</h3>
+                                </div>
+                                <div class="col-md-12 text" id="news">
+                                    <!-- Single News -->
+                                    <div class="col-sm-4 single-news">
+                                        <article>
+                                            <img src="assets/img/news1.jpg" alt="">
+                                            <div class="content">
+                                                <h3>Meetup In Rome</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
+                                                <span class="date">02 November 2017</span>
+                                            </div>
+                                            <a href="#" class="link"></a>
+                                        </article>
+                                    </div>
+                                    <!-- END Single News -->
+                                    <div class="col-sm-4 single-news">
+                                        <article>
+                                            <img src="assets/img/news2.jpg" alt="">
+                                            <div class="content">
+                                                <h3>Brand Power</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
+                                                <span class="date">12 May 2017</span>
+                                            </div>
+                                            <a href="#" class="link"></a>
+                                        </article>
+                                    </div>
+                                    <div class="col-sm-4 single-news">
+                                        <article>
+                                            <img src="assets/img/news4.jpg" alt="">
+                                            <div class="content">
+                                                <h3>Vision</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, voluptas corporis. Maxime sapiente, adipisci laborum.</p>
+                                                <span class="date">13 March 2017</span>
+                                            </div>
+                                            <a href="#" class="link"></a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-md-12 padding-leftright-null">
+                                   <div class="text padding-onlytop-md padding-onlybottom-lg padding-md-top-null">
+                                       <a href="#" class="btn-pro">See all your news</a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Section News -->
+                    <!-- Section Partners -->
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="partners">
+                                    <!--<div class="col-xs-6 col-sm-4 col-md-2 text padding-leftright-null">
+                                        <h3>Our Trusted<br>Partners</h3>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/logo-square-2-dark.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/logo-square-3-dark.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/logo-square-4-dark.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/logo-square-5-dark.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner">
+                                        <img class="img-responsive" src="assets/img/logo-square-6-dark.png" alt="">
+                                    </div>-->
+                                    <div class="col-xs-6 col-sm-4 col-md-2 partner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Section Partners -->
+                </div>
+
+{% endblock %}

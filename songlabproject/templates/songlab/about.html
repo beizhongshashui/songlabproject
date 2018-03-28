@@ -1,0 +1,156 @@
+﻿{% extends 'songlab_base.html' %}
+{% load staticfiles %}
+{% block title %} 团队成员 {% endblock %}
+
+
+{% block content %}
+    <!--  END Page Header  -->
+                <div id="home-wrap" class="content-section fullpage-wrap">
+
+                    <!-- Services Section -->
+                    <div class="light-background">
+                        <div class="container">
+                            <div class="row no-margin padding-lg">
+                                <div class="col-md-4 padding-leftright-null">
+                                    <div class="text padding-topbottom-null padding-md-bottom">
+                                        <i class="material-icons color service">硬件</i>
+                                        <h3 class="margin-bottom-extrasmall">Experience</h3>
+                                        <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 padding-leftright-null">
+                                    <div class="text padding-topbottom-null padding-md-bottom">
+                                        <i class="material-icons color service">技术成果</i>
+                                        <h3 class="margin-bottom-extrasmall">Goals</h3>
+                                        <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 padding-leftright-null">
+                                    <div class="text padding-topbottom-null">
+                                        <i class="material-icons color service">招生条件</i>
+                                        <h3 class="margin-bottom-extrasmall">Vision</h3>
+                                        <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Services Section -->
+                    <!--  Team section  -->
+                    <div class="container">
+                        <div class="row no-margin padding-lg">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="text text-center padding-topbottom-null">
+                                    <h3 class="big">团队成员.</h3>
+                                </div>
+                            </div>
+                            <!--  Team  -->
+                            <div class="row team padding-onlytop-md">
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/songyan.jpg" %} alt="" class="img-responsive">
+                                        <h3>宋艳老师</h3>
+                                        <span>北京师范大学认知神经科学与学习国家重点实验室教授，博士生导师。</span>
+                                        <span>于2003年获中国科学院生物物理研究所生物物理专业理学博士学位；1997年在首都医科大
+                                            学获生物医学工程工学学士学位。2010年在美国加州大学（San Diego）做访问学者。
+                                            主持的科研项目包括国家自然科学基金面上项目（2007年，2010年，2013年）、北京市自
+                                            然科学基金（2007年）等，参与的科研项目包括国家重点基础研究发展计划（2009年，2014年）
+                                            等，获北京师范大学励耘青年教师奖， “京师英才”等多项奖励。已经发表30多篇英文学术论文，
+                                            是NeuroImage，Human Brain Mapping，Scientific Reports，Vision Research等多个专业学术期刊的审稿人。</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/zhaochenguang.jpg" %} alt="" class="img-responsive">
+                                        <h3>赵晨光</h3>
+                                        <span>本科:郑州大学.通信工程</span>
+                                        <span>研究生:北京师范大学.基础心理</span>
+                                        <span>1.EEG-fNIRS多模态记录</span>
+                                        <span>2.儿童ADHD脑电与眼动研究</span>
+                                        <span>3.基础视觉以及注意机制的研究</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/libingkun.jpg" %} alt="" class="img-responsive">
+                                        <h3>李秉坤</h3>
+                                        <span>本科(2013-2017):广州大学.心理系</span>
+                                        <span>研究生(在读):北京师范大学.基础心理</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/liweidong.jpg" %} alt="" class="img-responsive">
+                                        <h3>李东韡</h3>
+                                        <span>本科：江苏大学.物理系</span>
+                                        <span>1.视觉加工与注意的脑机制研究；</span>
+                                        <span>2.视觉空间注意与工作记忆的脑机制研究；</span>
+                                        <span>3.EEG-fNIRS-saccade多模态视觉研究</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row team padding-onlytop-md">
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/guojialiang.jpg" %} alt="" class="img-responsive">
+                                        <h3>郭家梁</h3>
+                                        <span>本科:河北工程大学，自动化</span>
+                                        <span>北京工业大学，控制科学与工程/北京师范大学</span>
+                                        <span>1.基于脑电的儿童视知觉及注意机理研究</span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/libingkun.jpg" %} alt="" class="img-responsive">
+                                        <h3>李秉坤</h3>
+                                        <span>暂无</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/taoye.jpg" %} alt="" class="img-responsive">
+                                        <h3>陶烨</h3>
+                                        <span>本科:北京航空航天大学，数学系</span>
+                                        <span>1.EEG-fNIRS多模态记录 </span>
+                                        <span>2.基础视觉以及注意机制的研究</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/wangencong.jpg" %} alt="" class="img-responsive">
+                                        <h3>王恩聪</h3>
+                                        <span>本科:济宁医学院，精神病与精神卫生</span>
+                                        <span>研究生:北京大学第六医院/北京师范大学</span>
+                                        <span>研究方向:ADHD儿童视空间脑机制研究</span>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row team padding-onlytop-md">
+                                <div class="col-xs-6 col-md-3 padding-leftright-null">
+                                    <div class="person">
+                                        <img src={% static "assets/img/changxinyuan.jpg" %} alt="" class="img-responsive">
+                                        <h3>常勤缘(照片太小)</h3>
+                                        <span>暂无</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+{% endblock %}
+
+
+
+        
+
